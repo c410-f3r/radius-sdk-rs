@@ -202,7 +202,7 @@ pub enum EthereumError {
 
 impl std::fmt::Display for EthereumError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{:?}", self)
+        write!(f, "{self:?}")
     }
 }
 

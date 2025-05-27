@@ -238,7 +238,7 @@ pub enum CachedKvStoreError {
 
 impl std::fmt::Display for CachedKvStoreError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{:?}", self)
+        write!(f, "{self:?}")
     }
 }
 

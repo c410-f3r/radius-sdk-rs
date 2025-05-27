@@ -507,7 +507,7 @@ unsafe impl Send for RpcClientError {}
 
 impl std::fmt::Display for RpcClientError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{:?}", self)
+        write!(f, "{self:?}")
     }
 }
 
